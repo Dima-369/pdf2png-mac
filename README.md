@@ -1,5 +1,8 @@
-pdf2png
-===========
+# Changes
+
+- echo out page count after all pages are converted for further usage in other scripts
+
+## pdf2png
 
 [pdf2png](http://www.evanjones.ca/pdf2png.html) is command line program for Mac originally written by Evan Jones, 
 which convert PDF pages to PNG image files via Cocoa/Quartz rendering engine.
