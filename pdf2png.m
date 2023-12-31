@@ -194,6 +194,7 @@ int main( int argc, char* argv[] )
         [loopPool release];
     }
     while ( morePages == YES );
+    printf("%d", page);
     
     [pool release];
 }
