@@ -1,6 +1,7 @@
 # Changes
 
 - echo out page count after all pages are converted for further usage in other scripts
+- use stable `outputFileFormat` with a `-%d` suffix
 
 ## pdf2png
 
