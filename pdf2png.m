@@ -95,7 +95,7 @@ int main( int argc, char* argv[] )
     }
     
     // The output file name
-    NSString* outputFileFormat = @"%@-p%01d";
+    NSString* outputFileFormat = @"%@-%d";
     
     // Find the PDF representation
     NSPDFImageRep* pdfSource = NULL;
@@ -106,10 +106,6 @@ int main( int argc, char* argv[] )
         {
             pdfSource = [reps objectAtIndex: i];
             [pdfSource setCurrentPage: page-1];
-            
-            // Set the output format to have the correct number of leading zeros
-            unsigned int numDigits = [(NSString*) [NSString stringWithFormat: @"%ld", (long)[pdfSource pageCount]] length];
-            outputFileFormat = [NSString stringWithFormat: @"%%@-p%%0%dd", numDigits];
         }
     }
     
